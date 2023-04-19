@@ -1,0 +1,20 @@
+extends layout
+block content
+ h1= title
+ - let earphoneid = toShow._id
+ - let brand = toShow.brand
+ - let color = toShow.color
+ - let price = toShow.price
+ div
+ div.row
+ div(class='earphoneAttr mr-3') earphone ID is: 
+ div #{earphoneid}
+ div.row
+ div(class='earphoneAttr mr-3') earphone brand is:
+ div #{brand}
+ div.row
+ div(class='earphoneAttr mr-3') earphone color is:
+ div #{color}
+ div.row
+ div(class='earphoneAttr mr-3') earphone price is:
+ div #{price}

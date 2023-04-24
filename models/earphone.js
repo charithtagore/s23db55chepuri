@@ -1,6 +1,10 @@
 const mongoose = require("mongoose")
 const earphonesSchema = mongoose.Schema({
-brand: String,
+brand:  {
+    type: String,
+    required: true,
+    match: /^[a-zA-Z]+$/
+  },
 color: String,
 price:{
     type:Number,
